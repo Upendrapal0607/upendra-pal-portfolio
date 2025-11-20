@@ -36,7 +36,6 @@ import React from 'react'
 import { Link } from 'react-scroll'
 import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
-
 export default function Hero() {
   return (
     <section
@@ -61,7 +60,7 @@ export default function Hero() {
             transition={{ delay: 0.2 }}
             className="text-xl md:text-2xl mt-3 text-gray-400 font-medium"
           >
-            Full Stack Developer — AdTech & SaaS Engineer
+            Software Engineer (SDE-1) — Full Stack Developer | AdTech & SaaS
           </motion.h2>
 
           <motion.p
@@ -70,13 +69,13 @@ export default function Hero() {
             transition={{ delay: 0.4 }}
             className="mt-6 text-gray-300 max-w-xl leading-relaxed"
           >
-            Software Engineer with 1+ years of experience building and scaling
+            Software Engineer with 1.4+ years of experience building and scaling
             <span className="text-white font-medium"> SaaS-based B2B and AdTech platforms. </span>
             Skilled in <span className="text-primary font-medium">TypeScript, Node.js, and React</span>, 
             focused on creating high-performance, maintainable systems that deliver measurable business impact.
           </motion.p>
 
-          <motion.ul
+          {/* <motion.ul
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6 }}
@@ -85,7 +84,7 @@ export default function Hero() {
             <li>• Improved API performance by 30% at Trackier through optimized query handling</li>
             <li>• Developed NookPay — a secure vendor payout system with RazorpayX integration</li>
             <li>• Migrated legacy PHP services to Node.js + TypeScript microservices</li>
-          </motion.ul>
+          </motion.ul> */}
 
           {/* === Buttons === */}
           <motion.div
@@ -120,11 +119,11 @@ export default function Hero() {
           transition={{ delay: 0.5 }}
           className="flex justify-center md:justify-end relative"
         >
-          <div className="relative w-80 md:w-96">
+          <div className="relative rounded-4 w-full md:w-7/10">
             <img
-              src="https://raw.githubusercontent.com/MicaelliMedeiros/micaellimedeiros/master/image/computer-illustration.png"
+              src="../../src/assets/images/sideimage.png"
               alt="developer illustration"
-              className="w-full h-auto drop-shadow-[0_0_30px_rgba(14,165,164,0.4)]"
+              className="w-full rounded-4 h-auto drop-shadow-[0_0_30px_rgba(14,165,164,0.4)]"
             />
             <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent rounded-2xl pointer-events-none" />
           </div>

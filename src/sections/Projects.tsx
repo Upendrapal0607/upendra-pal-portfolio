@@ -1,7 +1,8 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import projects from '../data/projects'
-
+import { SiGithub } from "react-icons/si";
+import { BiLinkExternal } from "react-icons/bi";
 export default function Projects() {
   return (
     <section id="projects" className="bg-black py-16 sm:py-20">
@@ -72,27 +73,34 @@ export default function Projects() {
                 </div>
 
                 {/* 🔗 Buttons */}
-                <div className="flex gap-3 sm:gap-4">
+                <div className="flex gap-3 sm:gap-4 justify-between">
                   <a
                     href={p.github}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex-1 sm:flex-none px-4 sm:px-5 py-2 text-center bg-[#1c1c1c] 
+                    className="flex-1 flex justify-between items-center gap-2 sm:flex-none px-4 sm:px-5 py-2 text-center bg-[#1c1c1c] 
                                text-gray-100 rounded-lg border border-gray-700 
                                hover:border-cyan-400 hover:text-cyan-400 transition-all text-sm sm:text-base"
                   >
-                    GitHub
+                    <p>
+
+                    GitHub 
+                    </p>
+                    <SiGithub className='text-xl'/>
                   </a>
                   {p.live && (
                     <a
                       href={p.live}
                       target="_blank"
                       rel="noreferrer"
-                      className="flex-1 sm:flex-none px-4 sm:px-5 py-2 text-center bg-cyan-500 
+                      className="flex-1 flex justify-between items-center gap-2 sm:flex-none px-4 sm:px-5 py-2 text-center bg-cyan-500 
                                  text-black font-medium rounded-lg hover:bg-cyan-400 
                                  transition-all text-sm sm:text-base"
                     >
+                      <p>
                       Deploy
+                      </p>
+                      <BiLinkExternal className='text-xl' />
                     </a>
                   )}
                 </div>

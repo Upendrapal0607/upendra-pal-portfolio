@@ -69,19 +69,45 @@ import 'swiper/css'
 import 'swiper/css/autoplay'
 
 const skills = [
+  // Backend Core
+    { name: 'JavaScript', img: 'https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg' },
+  { name: 'NodeJS', img: 'https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg' },
+  { name: 'Go', img: 'https://www.vectorlogo.zone/logos/golang/golang-icon.svg' },
+  { name: 'Express', img: 'https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg' },
+  { name: 'NestJS', img: 'https://www.vectorlogo.zone/logos/nestjs/nestjs-icon.svg' },
+  { name: 'Koa.js', img: 'https://www.vectorlogo.zone/logos/koajs/koajs-icon.svg' },
+
+  // Core Web Skills
   { name: 'HTML', img: 'https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg' },
   { name: 'CSS', img: 'https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg' },
-  { name: 'JavaScript', img: 'https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg' },
-  { name: 'NodeJS', img: 'https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg' },
-  { name: 'React', img: 'https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg' },
-  { name: 'Redux', img: 'https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png' },
+
+  // Databases / Querying
+  { name: 'SQL', img: 'https://www.svgrepo.com/show/331760/sql-database-generic.svg' },
   { name: 'MongoDB', img: 'https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg' },
-  { name: 'Express', img: 'https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg' },
+
+  // System & Problem Solving
+  { name: 'System Design', img: 'https://cdn-icons-png.flaticon.com/512/3208/3208750.png' },
+  { name: 'Problem Solver', img: 'https://cdn-icons-png.flaticon.com/512/3135/3135715.png' },
+
+  // Cloud / DevOps
+  { name: 'GCP', img: 'https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg' },
+  { name: 'Jenkins', img: 'https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg' },
+
+  // Frontend Frameworks
+  { name: 'React', img: 'https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg' },
+  { name: 'NextJS', img: 'https://www.vectorlogo.zone/logos/nextjs/nextjs-icon.svg' },
+  { name: 'Redux', img: 'https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png' },
+  { name: 'Tailwind CSS', img: 'https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg' },
+  { name: 'Chakra UI', img: 'https://img.icons8.com/color/256/chakra-ui.png' },
+
+  // Tools
   { name: 'Postman', img: 'https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg' },
-  { name: 'Chakra UI', img: 'https://raw.githubusercontent.com/chakra-ui/chakra-ui/main/logo/logomark-colored.svg' },
   { name: 'Git', img: 'https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg' },
   { name: 'GitHub', img: 'https://www.vectorlogo.zone/logos/github/github-tile.svg' },
-]
+  { name: 'VS Code', img: 'https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-icon.svg' },
+
+];
+
 
 export default function Skills() {
   return (
